@@ -10,7 +10,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <div className="flex items-center justify-center my-10"><hr className="border-4 rounded border-[#141414] w-[90%] max-w-[900px]" /></div>
+      <div className="flex items-center justify-center my-10 lg:my-12"><hr className="border-4 rounded border-[#141414] w-[90%] max-w-[900px]" /></div>
       <About />
       <Featured />
       <FAQ />

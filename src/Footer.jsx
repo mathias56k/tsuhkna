@@ -6,7 +6,7 @@ import { GrYoutube } from "react-icons/gr";
 function Featured() {
     return (
       <div className="flex flex-col items-center justify-center w-full bg-[#141414] py-10 mt-12">
-        <div className="w-[70%] flex justify-center h-10 mb-8 btn btn-ghost">
+        <div className="flex justify-center h-10 mb-8 btn btn-ghost">
           <h2 className="font-BigBoy font-bold text-xl">LET'S CREATE SOMETHING</h2>
         </div>
         <div className='flex justify-around text-[#A5ADBB] w-[90%] max-w-[500px] h-10'>

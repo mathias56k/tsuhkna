@@ -31,7 +31,6 @@ function Navbar() {
     scroller.scrollTo('aboutSection', {
       duration: 1500,
       smooth: true,
-      offset: -500,
     });
     if (isOpen == true) {
       setIsOpen(false)
@@ -42,7 +41,6 @@ function Navbar() {
     scroller.scrollTo('projectsSection', {
       duration: 1500,
       smooth: true,
-      offset: -200,
     });
     setIsOpen(false)
   };
