@@ -1,20 +1,17 @@
-import Navbar from "./Navbar"
-import Hero from "./Hero"
-import About from "./About"
-import Featured from "./Featured"
-import FAQ from "./FAQ"
-import Footer from "./Footer"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Homepage from "./Homepage"
+import ContactPage from "./ContactPage";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <div className="flex items-center justify-center my-10 lg:my-12"><hr className="border-4 rounded border-[#141414] w-[90%] max-w-[900px]" /></div>
-      <About />
-      <Featured />
-      <FAQ />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

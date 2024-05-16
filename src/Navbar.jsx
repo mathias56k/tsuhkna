@@ -7,8 +7,11 @@ import { FaTiktok } from "react-icons/fa";
 import { GrYoutube } from "react-icons/gr";
 import { Element, scroller } from 'react-scroll';
 
+import { Link, useNavigate } from "react-router-dom";
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,6 +51,7 @@ function Navbar() {
   };
 
   const scrollToFAQSection = () => {
+    navigate("/");
     scroller.scrollTo('FAQSection', {
       duration: 1500,
       smooth: true,
@@ -59,7 +63,7 @@ function Navbar() {
     <>
       <div className="navbar bg-[#CFC0AE] text-[#141414] fixed w-full px-[6%] z-10">
         <div className="w-[30%]">
-          <a href="./"><img src="./tsuhkna-website-logo.png" className='h-9' alt="Tsuhkna Website Logo" /></a>
+          <a href="/"><img src="../tsuhkna-website-logo.png" className='h-9' alt="Tsuhkna Website Logo" /></a>
         </div>
         <div className="sm:hidden flex items-end justify-end w-[70%]">
           <button className="btn btn-square btn-ghost hover:bg-[#998e81]" onClick={() => setIsOpen(!isOpen)}>
@@ -69,7 +73,7 @@ function Navbar() {
         <div className="h-full hidden sm:flex items-end justify-end w-[70%] gap-2">
           <a className="btn sm:px-2 md:px-4 btn-ghost hover:bg-[#998e81] text-lg text-[#141414] font-BigBoy font-black" href="#" onClick={() => scrollToAboutSection()}>About</a>
           <a className="btn sm:px-2 md:px-4 btn-ghost hover:bg-[#998e81] text-lg text-[#141414] font-BigBoy font-black" href="#" onClick={() => scrollToProjectsSection()}>Projects</a>
-          <a className="btn sm:px-2 md:px-4 btn-ghost hover:bg-[#998e81] text-lg text-[#141414] font-BigBoy font-black" href="#">Book now</a>
+          <Link to={`/contact/`}><a className="btn sm:px-2 md:px-4 btn-ghost hover:bg-[#998e81] text-lg text-[#141414] font-BigBoy font-black" onClick={() => setIsOpen(false)}>Book now</a></Link>
           <a className="btn sm:px-2 md:px-4 btn-ghost hover:bg-[#998e81] text-lg text-[#141414] font-BigBoy font-black" href="#" onClick={() => scrollToFAQSection()}>FAQ</a>
         </div>
       </div>
@@ -77,10 +81,10 @@ function Navbar() {
         <div className="fixed top-16 left-0 w-full h-full bg-black bg-opacity-50 z-50 flex justify-center items-center sm:hidden">
           <div className="bg-[#CFC0AE] w-full h-full flex flex-col justify-between items-center">
             <div className='flex flex-col items-center justify-center gap-8 h-[80%] w-full'>
-              <a className="block text-[#141414] hover:text-[#2F3032] font-BigBoy font-black text-5xl" href="#" onClick={() => scrollToAboutSection()}>About</a>
-              <a className="block text-[#141414] hover:text-[#2F3032] font-BigBoy font-black text-5xl" href="#" onClick={() => scrollToProjectsSection()}>Projects</a>
-              <a className="block text-[#141414] hover:text-[#2F3032] font-BigBoy font-black text-5xl" href="#">Book now</a>
-              <a className="block text-[#141414] hover:text-[#2F3032] font-BigBoy font-black text-5xl" href="#" onClick={() => scrollToFAQSection()}>FAQ</a>
+              <a className="block text-[#141414] hover:text-[#2F3032] font-BigBoy font-black text-5xl hover:cursor-pointer" onClick={() => scrollToAboutSection()}>About</a>
+              <a className="block text-[#141414] hover:text-[#2F3032] font-BigBoy font-black text-5xl hover:cursor-pointer" onClick={() => scrollToProjectsSection()}>Projects</a>
+              <Link to={`/contact/`}><a className="block text-[#141414] hover:text-[#2F3032] font-BigBoy font-black text-5xl" onClick={() => setIsOpen(false)}>Book now</a></Link>
+              <a className="block text-[#141414] hover:text-[#2F3032] font-BigBoy font-black text-5xl hover:cursor-pointer" onClick={() => scrollToFAQSection()}>FAQ</a>
             </div>
             <div className='w-full h-[20%] flex items-center justify-center'>
               <div className='flex justify-around w-[90%] h-20 text-[#141414]'>
