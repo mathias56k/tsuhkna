@@ -7,11 +7,11 @@ function ContactPage() {
             <a href="/"><img src="../tsuhkna-website-logo.png" className='h-9' alt="Tsuhkna Website Logo" /></a>
         </div>
       <div className="mt-[65px]">
-        <form name="contact" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact" />
+        <form name="contact v1" method="POST" data-netlify-recaptcha="true" onSubmit="submit">
+          <input type="hidden" name="form-name" value="contact v1" />
           <div>
             <label htmlFor="name">Name:</label>
-            <input type="text" id="name" name="name" />
+            <input type="text" id="name" name="first-name" />
           </div>
           <div>
             <label htmlFor="email">Email:</label>
