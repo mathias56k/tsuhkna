@@ -7,8 +7,8 @@ function ContactPage() {
             <a href="/"><img src="../tsuhkna-website-logo.png" className='h-9' alt="Tsuhkna Website Logo" /></a>
         </div>
       <div className="mt-[65px]">
-        <form name="contact v1" method="POST" netlify>
-          <input type="hidden" name="form-name" value="contact v1" />
+        <form name="contact" method="POST" netlify>
+          <input type="hidden" name="form-name" value="contact" />
           <div>
             <label htmlFor="name">Name:</label>
             <input type="text" id="name" name="first-name" />

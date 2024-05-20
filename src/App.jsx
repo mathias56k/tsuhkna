@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Homepage from "./Homepage"
-import ContactPage from "../public/ContactPage.jsx";
+import ContactPage from "./ContactPage.jsx";
 
 function App() {
   return (
