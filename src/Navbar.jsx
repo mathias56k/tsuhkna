@@ -2,9 +2,7 @@ import { useState, useEffect } from 'react';
 import { LuMenu } from "react-icons/lu";
 import { IoClose } from "react-icons/io5";
 import { GrInstagram } from "react-icons/gr";
-import { GrFacebookOption } from "react-icons/gr";
 import { FaTiktok } from "react-icons/fa";
-import { GrYoutube } from "react-icons/gr";
 import { Element, scroller } from 'react-scroll';
 
 import { Link, useNavigate } from "react-router-dom";
@@ -55,6 +53,7 @@ function Navbar() {
     scroller.scrollTo('FAQSection', {
       duration: 1500,
       smooth: true,
+      offset: -100,
     });
     setIsOpen(false)
   };
@@ -87,11 +86,9 @@ function Navbar() {
               <a className="block text-[#141414] hover:text-[#2F3032] font-BigBoy font-black text-5xl hover:cursor-pointer" onClick={() => scrollToFAQSection()}>FAQ</a>
             </div>
             <div className='w-full h-[20%] flex items-center justify-center'>
-              <div className='flex justify-around w-[90%] h-20 text-[#141414]'>
-                <div className='btn btn-ghost hover:bg-[#998e81]'><GrInstagram className='text-2xl' /></div>
-                <div className='btn btn-ghost hover:bg-[#998e81]'><FaTiktok className='text-2xl' /></div>
-                <div className='btn btn-ghost hover:bg-[#998e81]'><GrYoutube className='text-2xl' /></div>
-                <div className='btn btn-ghost hover:bg-[#998e81]'><GrFacebookOption className='text-2xl' /></div>
+              <div className='flex justify-center gap-4 w-[90%] h-20 mb-20 text-[#141414]'>
+                <a href="https://www.instagram.com/tsuhkna" target="_blank" className='btn btn-ghost hover:bg-[#998e81]'><GrInstagram className='text-2xl' /></a>
+                <a href="https://www.tiktok.com/@carguyest" target="_blank" className='btn btn-ghost hover:bg-[#998e81]'><FaTiktok className='text-2xl' /></a>
               </div>
             </div>
           </div>
