@@ -111,9 +111,9 @@ function ContactPage() {
         <div className="flex items-center gap-4 mt-4 flex-col">
           <img src="/arrows.svg" className="w-[16rem]" alt="" />
           <div className="flex items-center gap-20">
-            <a href="https://www.instagram.com/tsuhkna" target="_blank" className='btn btn-ghost hover:bg-[#998e81] text-[#141414] mt-[-3rem]'><GrInstagram className='text-3xl' /></a>
+            <a href="https://www.instagram.com/tsuhkna" target="_blank" className='btn btn-ghost hover:bg-[#998e81] text-[#141414] mt-[-4rem]'><GrInstagram className='text-3xl' /></a>
             <a href="mailto:someone@example.com" className='btn btn-ghost hover:bg-[#998e81] text-[#141414]'><MdOutlineEmail className='text-[2.6rem]' /></a>
-            <a href="https://www.tiktok.com/@carguyest" target="_blank" className='btn btn-ghost hover:bg-[#998e81] text-[#141414] mt-[-3rem]'><FaTiktok className='text-3xl' /></a>
+            <a href="https://www.tiktok.com/@carguyest" target="_blank" className='btn btn-ghost hover:bg-[#998e81] text-[#141414] mt-[-4rem]'><FaTiktok className='text-3xl' /></a>
           </div>
         </div>
       </div>
