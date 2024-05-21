@@ -42,7 +42,7 @@ function ContactPage() {
                 type="text"
                 id="name"
                 name="name"
-                className="bg-[#2F3032] w-full rounded-md ml-2 h-10 px-2 font-SmolBoy text-[#A5ADBB]"
+                className="bg-[#2F3032] w-full rounded-md ml-2 h-10 px-2 font-SmolBoy text-[#A5ADBB] input"
               />
             </div>
             <div className="flex flex-col items-start w-full">
@@ -56,7 +56,7 @@ function ContactPage() {
                 type="email"
                 id="email"
                 name="email"
-                className="bg-[#2F3032] w-full rounded-md ml-2 h-10 px-2 font-SmolBoy text-[#A5ADBB]"
+                className="bg-[#2F3032] w-full rounded-md ml-2 h-10 px-2 font-SmolBoy text-[#A5ADBB] input"
               />
             </div>
             <div className="flex flex-col items-start w-full">
@@ -69,7 +69,8 @@ function ContactPage() {
               <textarea
                 id="message"
                 name="message"
-                className="bg-[#2F3032] w-full rounded-md ml-2 h-24 pt-1 px-2 font-SmolBoy text-[#A5ADBB]"
+                className="bg-[#2F3032] w-full rounded-md ml-2 h-24 pt-1 px-2 font-SmolBoy text-[#A5ADBB] input"
+                placeholder="Describe your idea, location, time and budget."
               ></textarea>
             </div>
             <div className="w-full ml-2 mt-2 flex">
@@ -95,7 +96,7 @@ function ContactPage() {
           </div>
           <button
             type="submit"
-            className="bg-[#2F3032] rounded-md font-BogBoy font-black text-3xl text-[#CFC0AE] btn btn-ghost px-12"
+            className="border-solid border-4 border-[#2F3032] rounded-md font-BogBoy font-black text-3xl text-[#CFC0AE] btn btn-ghost h-[4rem] px-12"
           >
             SEND
           </button>
@@ -112,7 +113,7 @@ function ContactPage() {
           <img src="/arrows.svg" className="w-[16rem]" alt="" />
           <div className="flex items-center gap-20">
             <a href="https://www.instagram.com/tsuhkna" target="_blank" className='btn btn-ghost hover:bg-[#998e81] text-[#141414] mt-[-4rem]'><GrInstagram className='text-3xl' /></a>
-            <a href="mailto:someone@example.com" className='btn btn-ghost hover:bg-[#998e81] text-[#141414]'><MdOutlineEmail className='text-[2.6rem]' /></a>
+            <a href="mailto:info@tsuhkna.com" className='btn btn-ghost hover:bg-[#998e81] text-[#141414]'><MdOutlineEmail className='text-[2.6rem]' /></a>
             <a href="https://www.tiktok.com/@carguyest" target="_blank" className='btn btn-ghost hover:bg-[#998e81] text-[#141414] mt-[-4rem]'><FaTiktok className='text-3xl' /></a>
           </div>
         </div>

@@ -10,7 +10,7 @@ export default {
       'BigBoy': ['Montserrat', 'sans-serif'],
       'MediumBoy': ['Maven Pro', 'sans-serif'],
       'SmolBoy': ['Libre Franklin', 'sans-serif']
-    }
+    },
   },
   plugins: [
     require('daisyui'),
