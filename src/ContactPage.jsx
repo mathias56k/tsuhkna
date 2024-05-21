@@ -41,7 +41,7 @@ function ContactPage() {
               <input
                 type="text"
                 id="name"
-                name="first-name"
+                name="name"
                 className="bg-[#2F3032] w-full rounded-md ml-2 h-10 px-2 font-SmolBoy text-[#A5ADBB]"
               />
             </div>
