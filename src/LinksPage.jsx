@@ -17,18 +17,38 @@ function LinksPage() {
       </div>
       <div className="flex flex-col items-center gap-6">
         <div className="bg-[#2F3032] w-[80%] h-20 rounded-xl flex items-center justify-center gap-4 btn btn-ghost hover:bg-[#141414] max-w-[500px]">
-            <Link to={`/contact/`}><h2 className="font-BigBoy font-bold text-2xl text-[#CFC0AE]">BOOK NOW</h2></Link>
+          <Link to={`/contact/`}>
+            <h2 className="font-BigBoy font-bold text-2xl text-[#CFC0AE]">
+              BOOK NOW
+            </h2>
+          </Link>
         </div>
+        <a
+          href="https://www.instagram.com/tsuhkna"
+          target="_blank"
+          className="bg-[#2F3032] w-[80%] h-20 rounded-xl flex items-center justify-center gap-4 btn btn-ghost hover:bg-[#141414] max-w-[500px]"
+        >
+          <GrInstagram className="text-[#CFC0AE] h-8 w-8" />
+          <p className="font-BigBoy text-[#CFC0AE] font-bold text-2xl">
+            Instagram
+          </p>
+        </a>
+        <a
+          href="https://www.tiktok.com/@carguyest"
+          target="_blank"
+          className="bg-[#2F3032] w-[80%] h-20 rounded-xl flex items-center justify-center gap-4 btn btn-ghost hover:bg-[#141414] max-w-[500px]"
+        >
+          <FaTiktok className="text-[#CFC0AE] h-8 w-8" />
+          <p className="font-BigBoy text-[#CFC0AE] font-bold text-2xl">
+            TikTok
+          </p>
+        </a>
         <div className="bg-[#2F3032] w-[80%] h-20 rounded-xl flex items-center justify-center gap-4 btn btn-ghost hover:bg-[#141414] max-w-[500px]">
-            <GrInstagram  className="text-[#CFC0AE] h-8 w-8"/>
-            <p className="font-BigBoy text-[#CFC0AE] font-bold text-2xl">Instagram</p>
-        </div>
-        <div className="bg-[#2F3032] w-[80%] h-20 rounded-xl flex items-center justify-center gap-4 btn btn-ghost hover:bg-[#141414] max-w-[500px]">
-            <FaTiktok  className="text-[#CFC0AE] h-8 w-8"/>
-            <p className="font-BigBoy text-[#CFC0AE] font-bold text-2xl">TikTok</p>
-        </div>
-        <div className="bg-[#2F3032] w-[80%] h-20 rounded-xl flex items-center justify-center gap-4 btn btn-ghost hover:bg-[#141414] max-w-[500px]">
-        <Link to={`/`}><h2 className="font-BigBoy font-bold text-2xl text-[#CFC0AE]">WEBSITE</h2></Link>
+          <Link to={`/`}>
+            <h2 className="font-BigBoy font-bold text-2xl text-[#CFC0AE]">
+              WEBSITE
+            </h2>
+          </Link>
         </div>
       </div>
     </div>
