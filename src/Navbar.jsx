@@ -62,7 +62,7 @@ function Navbar() {
     <>
       <div className="navbar bg-[#CFC0AE] text-[#141414] fixed w-full px-[6%] z-10">
         <div className="w-[30%]">
-          <a href="/"><img src="../tsuhkna-website-logo.png" className='h-9' alt="Tsuhkna Website Logo" /></a>
+          <a href="/"><img src="../tsuhkna-website-logo-dark.svg" className='h-10' alt="Tsuhkna Website Logo" /></a>
         </div>
         <div className="sm:hidden flex items-end justify-end w-[70%]">
           <button className="btn btn-square btn-ghost hover:bg-[#998e81]" onClick={() => setIsOpen(!isOpen)}>

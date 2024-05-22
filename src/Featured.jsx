@@ -20,7 +20,6 @@ function Featured() {
             </h2>
           </div>
         </div>
-        {/* Remove these divs if not used */}
         {/* <div className="w-[90%] h-[9rem] rounded-2xl max-w-[750px] hidden"></div>
         <div className="w-[90%] h-[9rem] rounded-2xl max-w-[750px] hidden"></div> */}
       </div>
