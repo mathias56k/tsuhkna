@@ -58,6 +58,10 @@ function Navbar() {
     setIsOpen(false)
   };
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0)
+  }
+
   return (
     <>
       <div className="navbar bg-[#CFC0AE] text-[#141414] fixed w-full px-[6%] z-10">
@@ -72,7 +76,7 @@ function Navbar() {
         <div className="h-full hidden sm:flex items-end justify-end w-[70%] gap-2">
           <a className="btn sm:px-2 md:px-4 btn-ghost hover:bg-[#998e81] text-lg text-[#141414] font-BigBoy font-black" href="#" onClick={() => scrollToAboutSection()}>About</a>
           <a className="btn sm:px-2 md:px-4 btn-ghost hover:bg-[#998e81] text-lg text-[#141414] font-BigBoy font-black" href="#" onClick={() => scrollToProjectsSection()}>Projects</a>
-          <Link to={`/contact/`}><a className="btn sm:px-2 md:px-4 btn-ghost hover:bg-[#998e81] text-lg text-[#141414] font-BigBoy font-black" onClick={() => setIsOpen(false)}>Book now</a></Link>
+          <Link to={`/contact/`} onClick={scrollToTop}><a className="btn sm:px-2 md:px-4 btn-ghost hover:bg-[#998e81] text-lg text-[#141414] font-BigBoy font-black" onClick={() => setIsOpen(false)}>Book now</a></Link>
           <a className="btn sm:px-2 md:px-4 btn-ghost hover:bg-[#998e81] text-lg text-[#141414] font-BigBoy font-black" href="#" onClick={() => scrollToFAQSection()}>FAQ</a>
         </div>
       </div>
@@ -82,7 +86,7 @@ function Navbar() {
             <div className='flex flex-col items-center justify-center gap-8 h-[80%] w-full'>
               <a className="block text-[#141414] hover:text-[#2F3032] font-BigBoy font-black text-5xl hover:cursor-pointer" onClick={() => scrollToAboutSection()}>About</a>
               <a className="block text-[#141414] hover:text-[#2F3032] font-BigBoy font-black text-5xl hover:cursor-pointer" onClick={() => scrollToProjectsSection()}>Projects</a>
-              <Link to={`/contact/`}><a className="block text-[#141414] hover:text-[#2F3032] font-BigBoy font-black text-5xl" onClick={() => setIsOpen(false)}>Book now</a></Link>
+              <Link to={`/contact/`} onClick={scrollToTop}><a className="block text-[#141414] hover:text-[#2F3032] font-BigBoy font-black text-5xl" onClick={() => setIsOpen(false)}>Book now</a></Link>
               <a className="block text-[#141414] hover:text-[#2F3032] font-BigBoy font-black text-5xl hover:cursor-pointer" onClick={() => scrollToFAQSection()}>FAQ</a>
             </div>
             <div className='w-full h-[20%] flex items-center justify-center'>
