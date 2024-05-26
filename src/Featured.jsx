@@ -20,7 +20,7 @@ function Featured() {
             className="rounded-2xl w-full h-auto opacity-30 group-hover:opacity-100 transition-opacity duration-500"
           />
           <div className="absolute inset-0 flex items-center justify-center">
-            <h2 className="font-BigBoy font-black text-3xl text-[#CFC0AE] hover:cursor-default group-hover:opacity-0 transition-opacity duration-500 px-4 py-2 rounded">
+            <h2 className="font-BigBoy font-black text-3xl text-[#CFC0AE] cursor-pointer group-hover:opacity-0 transition-opacity duration-500 px-4 py-2 rounded">
               Open Track Festival 2024
             </h2>
           </div>

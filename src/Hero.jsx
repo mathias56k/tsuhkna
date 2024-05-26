@@ -1,6 +1,6 @@
 function Hero() {
     return (
-      <div className="pt-[65px] flex items-center justify-center"> 
+      <div className="pt-[65px] flex items-center justify-center bg-[#CFC0AE]"> 
           <div className="px-4 pb-4 w-[90%] bg-[#141414] rounded-[20px] min-[1000px]:px-6 min-[1000px]:pb-6">
               <div className="flex flex-col items-center text-[#CFC0AE] min-[560px]:mb-4">
                   <h2 className="font-BigBoy text-[3rem] font-black mb-[-1.7rem] min-[460px]:text-[3.7rem] min-[460px]:mb-[-2rem] min-[560px]:text-[4.6rem] min-[560px]:mb-[-2.5rem] min-[700px]:text-[5rem] min-[700px]:mb-[-2.8rem]">CAPTURING</h2>

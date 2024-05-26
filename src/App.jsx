@@ -4,7 +4,7 @@ import Homepage from "./Homepage"
 import ContactPage from "./ContactPage.jsx";
 import LinksPage from "./LinksPage.jsx";
 import Projects from "./Projects.jsx";
-import OpenTrackFestival2024 from "./projects/OpenTrackFestival2024.jsx";
+import OpenTrackFestival2024 from "./projects/open-track-festival-2024/OpenTrackFestival2024.jsx";
 
 function App() {
   return (

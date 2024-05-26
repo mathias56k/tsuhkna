@@ -1,4 +1,4 @@
-import Navbar from './Navbar';
+import NavbarDark from './NavbarDark';
 
 import { Link } from "react-router-dom";
 
@@ -9,7 +9,7 @@ const scrollToTop = () => {
 function Projects() {
   return (
     <div>
-      <Navbar />
+      <NavbarDark />
       <div className="bg-[#141414] min-h-screen pt-[90px] pb-[30px] flex flex-col justify-start items-center gap-8">
       <Link to="/projects/opentrackfestival2024" onClick={scrollToTop} className='flex flex-col justify-start items-center cursor-pointer'>
       <div className="relative w-[90%] rounded-2xl max-w-[750px] overflow-hidden group">
@@ -25,8 +25,8 @@ function Projects() {
           </div>
         </div>
         </Link> 
-        <div className='bg-[#2F3032] opacity-50 w-[90%] rounded-2xl max-w-[750px] h-20 flex items-center justify-center'>
-          <p className='font-BigBoy font-black text-xl'>More projects coming soon...</p>
+        <div className='w-[90%] rounded-2xl max-w-[750px] h-20 flex items-center justify-center'>
+          <p className='font-BigBoy font-black text-xl text-[#2F3032]'>More projects coming soon...</p>
         </div>
       </div>
     </div>

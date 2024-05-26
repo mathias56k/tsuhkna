@@ -3,5 +3,8 @@
 @tailwind utilities;
 
 html {
-    background-color: #CFC0AE !important;
+    background-color: #141414 !important;
+    overflow-x: hidden;
+    max-width: 100%;
 }
+
