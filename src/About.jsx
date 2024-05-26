@@ -20,7 +20,7 @@ function About() {
         </div>
       </div>
       <div className="w-[80%] xl:w-[40%] pt-6 flex flex-col items-center justify-center text-[#141414]">
-        <p className="font-BigBoy font-bold text-xl">
+        <p className="font-BigBoy font-bold text-xl text-center">
           Want to follow me on this journey?
         </p>
         <div className="flex gap-8 mt-4">

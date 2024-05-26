@@ -291,6 +291,7 @@ function OpenTrackFestival2024() {
                 alt={image.alt}
                 className={image.className + " cursor-pointer"}
                 onClick={() => handleClick(i)}
+                loading="lazy"
               />
             ))}
           </div>

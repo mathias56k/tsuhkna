@@ -9,7 +9,7 @@ const scrollToTop = () => {
 
 function Featured() {
     return (
-      <div className="flex flex-col items-center justify-center w-full bg-[#141414] py-10 mt-12">
+      <div className="flex flex-col items-center justify-center w-full bg-[#141414] py-10 pt-12">
         <div className="flex justify-center h-10 mb-8 btn btn-ghost">
           <Link to={`/contact/`} onClick={scrollToTop}><h2 className="font-BigBoy font-bold text-xl">LET'S CREATE SOMETHING</h2></Link>
         </div>
