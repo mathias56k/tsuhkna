@@ -3,7 +3,7 @@ import { FaTiktok } from "react-icons/fa";
 
 function About() {
   return (
-    <div className="flex flex-col items-center justify-center xl:flex-row aboutSection xl:items-start xl:pt-20 pb-20 bg-[#CFC0AE]">
+    <div className="flex flex-col items-center justify-center xl:flex-row aboutSection xl:items-start xl:pt-20 pb-10 xl:pb-20 bg-[#CFC0AE]">
       <div className="flex flex-col items-center justify-center xl:w-[50%]">
         <div className="w-[80%] mb-2 max-w-[40rem]">
           <h2 className="font-BigBoy font-black text-[#141414] text-3xl">

@@ -6,7 +6,7 @@ const scrollToTop = () => {
 
 function Featured() {
   return (
-    <div className="flex flex-col items-center justify-center w-full bg-[#141414] py-10 mt-12 projectsSection">
+    <div className="flex flex-col items-center justify-center w-full bg-[#141414] py-10 projectsSection">
       <div className="flex flex-col items-center">
         <h2 className="font-BigBoy font-black text-4xl text-[#CFC0AE]">FEATURED</h2>
         <h2 className="font-BigBoy font-black text-4xl text-[#CFC0AE]">PROJECT</h2>

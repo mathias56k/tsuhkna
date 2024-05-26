@@ -6,7 +6,7 @@ import { MdOutlineEmail } from "react-icons/md";
 
 function ContactPage() {
   return (
-    <div className="mb-20">
+    <div className="pb-20 bg-[#CFC0AE] pt-20 mt-[-80px]">
       <div className="h-[65px] flex items-center justify-center bg-[#CFC0AE] w-full top-0 fixed z-10">
         <a href="/">
           <img
