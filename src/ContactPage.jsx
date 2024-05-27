@@ -4,6 +4,21 @@ import { GrInstagram } from "react-icons/gr";
 import { FaTiktok } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 
+const handleSubmit = (event) => {
+  event.preventDefault();
+
+  const myForm = event.target;
+  const formData = new FormData(myForm);
+
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => navigate("/success"))
+    .catch((error) => alert(error));
+};
+
 function ContactPage() {
   return (
     <div className="pb-20 bg-[#CFC0AE] pt-20 mt-[-80px]">
@@ -21,7 +36,7 @@ function ContactPage() {
           name="contact"
           method="POST"
           netlify
-          action="/success"
+          onSubmit={handleSubmit}
           className="bg-[#141414] w-[90%] rounded-2xl flex items-center justify-center flex-col py-8 max-w-[40rem]"
         >
           <h2 className="font-BigBoy font-black text-5xl text-[#CFC0AE]">
