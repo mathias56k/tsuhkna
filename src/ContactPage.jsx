@@ -1,25 +1,27 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 import { GrInstagram } from "react-icons/gr";
 import { FaTiktok } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 
-const handleSubmit = (event) => {
-  event.preventDefault();
+const ContactPage = () => {
+  const navigate = useNavigate();
 
-  const myForm = event.target;
-  const formData = new FormData(myForm);
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(() => navigate("/success"))
-    .catch((error) => alert(error));
-};
+    const myForm = event.target;
+    const formData = new FormData(myForm);
 
-function ContactPage() {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => navigate("/success"))
+      .catch((error) => alert(error));
+  };
+
   return (
     <div className="pb-20 bg-[#CFC0AE] pt-20 mt-[-80px]">
       <div className="h-[65px] flex items-center justify-center bg-[#CFC0AE] w-full top-0 fixed z-10">
@@ -136,6 +138,6 @@ function ContactPage() {
       </div>
     </div>
   );
-}
+};
 
 export default ContactPage;
