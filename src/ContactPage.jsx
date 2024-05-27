@@ -21,7 +21,7 @@ function ContactPage() {
           name="contact"
           method="POST"
           netlify
-          action="/contact/successyay"
+          action="/success"
           className="bg-[#141414] w-[90%] rounded-2xl flex items-center justify-center flex-col py-8 max-w-[40rem]"
         >
           <h2 className="font-BigBoy font-black text-5xl text-[#CFC0AE]">

@@ -16,7 +16,7 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/links" element={<LinksPage />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/contact/successyay" element={<Success />} />
+          <Route path="/success" element={<Success />} />
 
           <Route path="/projects/opentrackfestival2024" element={<OpenTrackFestival2024 />} />
         </Routes>
