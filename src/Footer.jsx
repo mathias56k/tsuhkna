@@ -15,7 +15,7 @@ function Featured() {
         </div>
         <div className='flex justify-center text-[#A5ADBB] w-[90%] max-w-[500px] gap-4 h-10'>
           <a href="https://www.instagram.com/tsuhkna" target="_blank" className='btn btn-ghost'><GrInstagram className='text-2xl' /></a>
-          <a href="https://www.tiktok.com/@carguyest" target="_blank" className='btn btn-ghost'><FaTiktok className='text-2xl' /></a>
+          <a href="https://www.tiktok.com/@tsuhkna" target="_blank" className='btn btn-ghost'><FaTiktok className='text-2xl' /></a>
         </div>
       </div>
     )

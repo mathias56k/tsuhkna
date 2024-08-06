@@ -32,7 +32,7 @@ function About() {
             <GrInstagram className="text-2xl" />
           </a>
           <a
-            href="https://www.tiktok.com/@carguyest"
+            href="https://www.tiktok.com/@tsuhkna"
             target="_blank"
             className="btn btn-ghost hover:bg-[#998e81]"
           >

@@ -92,7 +92,7 @@ function Navbar() {
             <div className='w-full h-[20%] flex items-center justify-center'>
               <div className='flex justify-center gap-4 w-[90%] h-20 mb-20 text-[#141414]'>
                 <a href="https://www.instagram.com/tsuhkna" target="_blank" className='btn btn-ghost hover:bg-[#998e81]'><GrInstagram className='text-2xl' /></a>
-                <a href="https://www.tiktok.com/@carguyest" target="_blank" className='btn btn-ghost hover:bg-[#998e81]'><FaTiktok className='text-2xl' /></a>
+                <a href="https://www.tiktok.com/@tsuhkna" target="_blank" className='btn btn-ghost hover:bg-[#998e81]'><FaTiktok className='text-2xl' /></a>
               </div>
             </div>
           </div>

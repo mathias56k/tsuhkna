@@ -131,8 +131,8 @@ const ContactPage = () => {
           <img src="/arrows.svg" className="w-[16rem]" alt="" />
           <div className="flex items-center gap-20">
             <a href="https://www.instagram.com/tsuhkna" target="_blank" className='btn btn-ghost hover:bg-[#998e81] text-[#141414] mt-[-4rem]'><GrInstagram className='text-3xl' /></a>
-            <a href="mailto:info@tsuhkna.com" className='btn btn-ghost hover:bg-[#998e81] text-[#141414]'><MdOutlineEmail className='text-[2.6rem]' /></a>
-            <a href="https://www.tiktok.com/@carguyest" target="_blank" className='btn btn-ghost hover:bg-[#998e81] text-[#141414] mt-[-4rem]'><FaTiktok className='text-3xl' /></a>
+            <a href="mailto:mathias@tsuhkna.com" className='btn btn-ghost hover:bg-[#998e81] text-[#141414]'><MdOutlineEmail className='text-[2.6rem]' /></a>
+            <a href="https://www.tiktok.com/@tsuhkna" target="_blank" className='btn btn-ghost hover:bg-[#998e81] text-[#141414] mt-[-4rem]'><FaTiktok className='text-3xl' /></a>
           </div>
         </div>
       </div>
