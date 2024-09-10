@@ -7,7 +7,7 @@ import Projects from "./Projects.jsx";
 import Success from "./Success.jsx";
 import RollerTutorial from "./RollerTutorial.jsx";
 
-import OpenTrackFestival2024 from "./projects/open-track-festival-2024/OpenTrackFestival2024.jsx";
+import DriftFactoryMatsuri2024 from "./projects/drift-factory-matsuri-2024/DriftFactoryMatsuri2024.jsx";
 import Stancest24 from "./projects/stancest24/Stancest24.jsx";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
           <Route path="/success" element={<Success />} />
           <Route path="/roller-tutorial" element={<RollerTutorial />} />
 
-          <Route path="/projects/opentrackfestival2024" element={<OpenTrackFestival2024 />} />
+          <Route path="/projects/driftfactorymatsuri2024" element={<DriftFactoryMatsuri2024 />} />
           <Route path="/projects/stancest24" element={<Stancest24 />} />
         </Routes>
       </BrowserRouter>
