@@ -1,6 +1,6 @@
 function FAQ() {
   return (
-    <div className="flex flex-col items-center justify-center w-full pt-10 pb-10 FAQSection bg-[#CFC0AE]">
+    <div className="flex flex-col items-center justify-center w-full pt-10 pb-10 FAQSection bg-[#CFC0AE] text-[#A5ADBB]">
       <h2 className="font-BigBoy font-black text-[#141414] text-4xl">FAQ</h2>
       <div className="w-[90%] py-10 flex flex-col items-center justify-center xl:flex-row xl:gap-4 xl:items-start">
       <div className="collapse collapse-arrow bg-[#141414] mb-4 p-4 max-w-[550px]">
